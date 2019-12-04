@@ -22,6 +22,7 @@ const memory = {
       arrToPrint.length === 1 ? console.log(arrToPrint[0]) : console.log(arrToPrint.join(' '));
     },
   },
+  
   push: {
     isNative: true,
     type: 'fn',
@@ -38,6 +39,7 @@ const memory = {
       thiss.memory[arrVariable.name].body = arrToPushTo;
     },
   },
+
   index: {
     isNative: true,
     type: 'fn',
@@ -69,7 +71,7 @@ Interpreter.prototype.tokenize = function (text, logger) {
 
 Interpreter.prototype.input = function (text, logger = false) {
   this.tokens = this.tokenize(text);
-//  console.log(this.tokens);
+  console.log(this.tokens);
   if (!this.tokens.length) {
     return '';
   }

@@ -1,5 +1,5 @@
 fn fib = (num n) :
-    if n == 1 :
+    if n == 1:
         => 1
     : elsif n == 2 :
         => 2
@@ -8,6 +8,3 @@ fn fib = (num n) :
     :
 :
 
-from 1 to 15 with i :
-    print(i, fib(i))
-:

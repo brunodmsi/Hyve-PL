@@ -1,0 +1,7 @@
+from 1 to 100 with i :
+    from 1 to 50 with j :
+        from 1 to 25 with k :
+            print(i, j, k)
+        :
+    :
+:
