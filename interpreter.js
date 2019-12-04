@@ -69,7 +69,7 @@ Interpreter.prototype.tokenize = function (text, logger) {
 
 Interpreter.prototype.input = function (text, logger = false) {
   this.tokens = this.tokenize(text);
-  console.log(this.tokens);
+//  console.log(this.tokens);
   if (!this.tokens.length) {
     return '';
   }
